@@ -3,14 +3,7 @@ from telethon import TelegramClient, events
 from requests.auth import HTTPBasicAuth
 import requests
 import os
-
-# from creds import client_secret, client_id, api_id, api_hash, bot_token
-
-client_id = os.environ.get('CLIENT_ID')
-client_id = os.environ.get('CLIENT_SECRET')
-client_id = os.environ.get('API_ID')
-client_id = os.environ.get('API_HASH')
-client_id = os.environ.get('BOT_TOKEN')
+from creds import client_secret, client_id, api_id, api_hash, bot_token
 
 endpoint = "https://www.udemy.com/api-2.0/"
 NAME = "Peter Alkema"
